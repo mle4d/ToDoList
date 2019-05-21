@@ -1,12 +1,12 @@
 import template from '../src/list-template.js';
 const test = QUnit.test;
 
-test('list template test', assert => {
+//test('list template test', assert => {
     
     //const list = {
-       // dang I'm not sure what to out here
+       // dang I'm not sure what to put here
         
-    };
+    //});
     const expected = /*html*/`
     <li><input type="checkbox" value="Chikn">Chik'n</li>
 `;
@@ -16,4 +16,4 @@ test('list template test', assert => {
     
     assert.htmlEqual(html, expected);
 
-});
+};  
