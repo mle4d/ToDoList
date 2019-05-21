@@ -1,6 +1,6 @@
-import template from './pic-template.js';
-import htmlToDOM from '../src/html-to-DOM.js';
-import images from './images.js';
+import template from './list-template.js';
+import htmlToDOM from './html-to-DOM.js';
+import images from './list.js';
 import templateHeader from './template-header.js';
 
 const food = document.getElementById('foods');
