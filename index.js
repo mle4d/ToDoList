@@ -3,13 +3,13 @@ import htmlToDOM from '../src/html-to-DOM.js';
 import images from './images.js';
 import templateHeader from './template-header.js';
 
-const pictures = document.getElementById('pictures');
-const header = document.getElementById('horny-creatures');
+const food = document.getElementById('foods');
+const header = document.getElementById('grocery-list');
 
-images.forEach(picture => {
-    const html = template(picture);
+images.forEach(foods => {
+    const html = template(foods);
     const dom = htmlToDOM(html);
-    pictures.appendChild(dom);
+    food.appendChild(dom);
 
 });
 
