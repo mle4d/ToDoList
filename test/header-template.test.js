@@ -1,10 +1,8 @@
-import template from '../src/list-template.js';
+import template from '../src/template-header.js';
 const test = QUnit.test;
 QUnit.module('header template');
 
 test('header template', (assert) => {
-    // Arrange
-    const header = 'Grocery List';
 
     const expected = /*html*/ `
     <header>
@@ -13,7 +11,7 @@ test('header template', (assert) => {
 `;
 
     // Act
-    const html = template(header);
+    const html = template();
 
     
     assert.htmlEqual(html, expected);
