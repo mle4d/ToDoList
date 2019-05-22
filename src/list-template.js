@@ -8,7 +8,7 @@ function itemCompleted(item) {
 
     return /*html*/`
         <li>
-            <input type="checkbox" ${checked}>${item.completed}
+            <input type="checkbox" ${checked}>${item.item}
         </li>
     `;
 }
