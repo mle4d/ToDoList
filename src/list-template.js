@@ -1,10 +1,15 @@
-function template(food) { 
+function taskCompleted(foods) {
+    let checked = '';
+
+    if(task.completed) {
+        checked = 'checked';
+    }
+
     return /*html*/`
-    <li>
-        <h2>${food.title}</h2>
-        <input type="checkbox" value="${food.value}">
-    </li>
-`;
+        <li>
+            <input type="checkbox" ${checked}>${foods.task}
+        </li>
+    `;
 }
 
-export default template;
+export default taskCompleted;

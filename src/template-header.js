@@ -1,6 +1,9 @@
 function templateHeader() {
+    const header = 'Grocery List';
     return /*html*/`
-    <h1>Vegan Pot Pie</h1>
+    <header>
+     <h1>${header}</h1>
+    </header>
 `;
 }
 
