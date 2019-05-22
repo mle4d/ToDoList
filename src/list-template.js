@@ -1,15 +1,16 @@
-function taskCompleted(foods) {
+function itemCompleted(item) {
     let checked = '';
 
-    if(task.completed) {
+    if(item.completed) {
         checked = 'checked';
+        
     }
 
     return /*html*/`
         <li>
-            <input type="checkbox" ${checked}>${foods.task}
+            <input type="checkbox" ${checked}>${item.completed}
         </li>
     `;
 }
 
-export default taskCompleted;
+export default itemCompleted;
